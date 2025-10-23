@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Instagram, Facebook } from 'lucide-react';
 
 export default function Footer() {
@@ -8,9 +9,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-xl font-bold uppercase tracking-wider mb-4">
-              BITES CAFÉ
-            </h3>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="relative w-10 h-10">
+                <Image
+                  src="/logo.jfif"
+                  alt="BITES Café Logo"
+                  fill
+                  className="object-contain brightness-0 invert"
+                />
+              </div>
+              <h3 className="text-xl font-bold uppercase tracking-wider">
+                BITES CAFÉ
+              </h3>
+            </div>
             <p className="text-sm text-gray-300 leading-relaxed">
               Pražská kavárna s duší.<br />
               Kde chuť střetává kvalitu.

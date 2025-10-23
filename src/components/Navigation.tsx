@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
@@ -23,8 +24,19 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold tracking-wider uppercase">
-            BITES
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="relative w-12 h-12 md:w-14 md:h-14">
+              <Image
+                src="/logo.jfif"
+                alt="BITES Café Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+            <span className="text-2xl font-bold tracking-wider uppercase group-hover:opacity-80 transition-opacity">
+              BITES
+            </span>
           </Link>
 
           {/* Desktop Navigation Links */}

@@ -56,6 +56,31 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Design Elements Showcase Section */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+            <Image
+              src="/design-elements.jfif"
+              alt="BITES Café Design Elements"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 1200px"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end">
+              <div className="p-8 md:p-12 text-white">
+                <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider">
+                  Objevte naši jedinečnost
+                </h2>
+                <p className="text-lg md:text-xl max-w-2xl opacity-90">
+                  Každý detail v BITES je pečlivě vybrán pro váš nezapomenutelný zážitek
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Philosophy Section */}
       <section className="py-20 px-6 bg-[hsl(135,15%,50%)]">
         <div className="max-w-7xl mx-auto">

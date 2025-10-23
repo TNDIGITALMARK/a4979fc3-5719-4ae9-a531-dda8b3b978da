@@ -7,6 +7,10 @@ export const dynamic = 'force-dynamic';
 export default function GalleryPage() {
   const galleryImages = [
     {
+      src: '/design-elements.jfif',
+      alt: 'BITES Café Design',
+    },
+    {
       src: '/generated/hero-coffee-croissant.png',
       alt: 'Káva a croissant',
     },
